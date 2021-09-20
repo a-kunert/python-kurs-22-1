@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{answer} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Are you sure to continue? Type (y)es/(n)o: \PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n}{answer} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}y\PYGZdq{}} \PYG{o+ow}{or} \PYG{n}{answer} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}yes\PYGZdq{}}\PYG{p}{:}
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}continue\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}aborted\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
