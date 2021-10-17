@@ -149,6 +149,7 @@ Editor und Compiler müssen nicht auf dem eigenem Computer installiert sein. Es 
 \end{frame}
 
 
+
 \begin{frame}
 \begin{block}{Phasen des Lernens einer Programmiersprache}
 \vspace{2pt}
@@ -575,64 +576,7 @@ Der Operator \pybw{**} berechnet die Potenz (hochnehmen).
 
 
 
-\section{Operatoren}
 
-\begin{frame}
-\begin{block}{Die wichtigsten Operatoren}
-	\begin{itemize}
-		\item \pybw{+} (Addition oder Zusammenkleben von Strings)
-		\item \pybw{-} (Subtraktion)
-		\item \pybw{*} (Multiplikation)
-		\item \pybw{/} (Division, ergibt immer ein Wert vom Typ \pybw{float})
-		\item \pybw{**} (Potenzierung)
-			\item \% (\textit{modulo-Operator}: Rest bei ganzzahliger Division)
-		\item \pybw{//} (Division und Abrunden, ergibt immer ein Wert vom Typ \pybw{int})
-		\item \pybw{==} (Vergleichsoperator, ergibt immer ein Wert vom Typ \pybw{bool})
-		\item \pybw{!=} (Ungleichheitsoperator, ergibt das Gegenteil von \pybw{==})
-	\end{itemize}
-\end{block}
-\end{frame}
-
-\begin{frame}
-\begin{block}{Operator-Präzedenz}
-	\uncover<+->{
-	\begin{enumerate}[<+->]
-		\item Klammern
-		\item \pybw{**}
-		\item \pybw{*}, \pybw{/}, \pybw{//}, \%
-		\item \pybw{+},\pybw{-}
-	\end{enumerate}	
-	}
-\uncover<+->{
-Operatoren gleichen Rangs werden innerhalb eines Ausdrucks von links nach rechts abgearbeitet. 
-}
-
-\uncover<+->{
-\vspace{10pt}
-\textbf{Ausnahmen:}\\
-Potenzierung (\py{**}) und Zuweisung (\py{=}) werden von rechts nach links verarbeitet. 
-}
-\end{block}
-\end{frame}
-
-\begin{fragile}[]
-\begin{block}{Kombinierte Zuweisung}
-		\vspace{2pt}
-		Oft möchte man eine gegebene Variable neu zuweisen: 
-		\begin{minted}{python}
-		counter = 1
-		counter = counter + 1 	# counter = 2
-		\end{minted}
-		\pause
-		Dies lässt sich auch kurz schreiben als 
-		\begin{minted}{python}
-		counter = 1
-		counter += 1 	# counter = 2
-		\end{minted}
-		\pause
-		Analog sind die Operatoren \py{-=}, \py{*=}, \py{/=}, etc. definiert. 
-	\end{block}
-\end{fragile}
 
 
 
