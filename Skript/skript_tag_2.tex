@@ -275,7 +275,7 @@ print("This line will be printed")
 x = input("Gib eine Zahl x an")
 x = int(x)
 
-if x < 0:
+if x > 0:
   print("x ist größer 0")
 else:
   print("x ist kleiner 0")
@@ -525,33 +525,6 @@ Die Anzahl der \pybw{elif}-Blöcke ist beliebig. Der \pybw{else}-Block ist wie i
 	\end{block}
 \end{fragile}
 
-\begin{frame}{Übung}
-\begin{block}{Baue einen Bestätigungsdialog}
-\vspace{2pt}
-Schreibe ein Skript was einen typischen Bestätigungsdialog simuliert. 
-Zum Beispiel: 
-
-\console{Are you sure to continue? (y)es/(n)o}. 
-
-Mögliche Antworten sind \console{yes}, \console{no} bzw. \console{y}, \console{n}. 
-Daraufhin soll auf der Konsole \console{confirmed} oder \console{aborted} erscheinen. 
-\end{block}
-\end{frame}
-
-
-\begin{frame}<beamer:0>[fragile]
-\frametitle{Lösung}
-\begin{solutionblock}{Bestätigungsdialog}
-\begin{minted}{python}
-answer = input("Are you sure to continue? Type (y)es/(n)o: ")
-
-if answer == "y" or answer == "yes":
-  print("continue")
-else:
-  print("aborted")
-\end{minted}
-\end{solutionblock}
-\end{frame}
 
 \begin{frame}{Komplexere Übung}
 %\begin{block}{Berechne Deinen Urlaubsort}
