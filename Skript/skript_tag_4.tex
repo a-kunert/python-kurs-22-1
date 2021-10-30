@@ -1,4 +1,211 @@
-\section{\texttt{break}, \texttt{continue} und \texttt{else} \\ \footnotesize Den Fluss einer Schleife kontrollieren}
+\section{Die While-Schleife \\ \footnotesize Wie die For-Schleife nur abstrakter und open-end}
+
+\begin{frame}
+\begin{block}{Problemstellung}
+	\vspace{2pt}
+	Lies immer wieder eine Zahl von der Konsole ein. Höre auf, wenn diese Zahl 7 ist. 
+	
+	Wie macht man das? 
+\end{block}
+\end{frame}
+
+\begin{fragile}
+	
+\begin{block}{Lösung}
+		\vspace{2pt}
+		
+	\begin{minted}{python}
+		x = 0
+		
+		while x != 7: 
+		  x = input("Gib eine Zahl an: ")
+		  x = int(x)
+		  
+		print("Fertig!")
+	\end{minted}
+	
+\end{block}
+\end{fragile}
+
+\begin{frame}
+
+\renewcommand{\baselinestretch}{1.5}
+\metroset{block=fill}
+\begin{block}{Struktur der \texttt{while}-Schleife}
+	\vspace{2pt}
+	\pause \py{while} \pause \textit{Bedingung}\pause\texttt{:} \pause \\
+	\spacechar\spacechar Codezeile 1 \pause \\ 
+	\spacechar\spacechar Codezeile 2 \pause \\
+	\spacechar\spacechar \phantom{Code} \vdots \pause  \\
+	\textit{Code, der nicht mehr Teil der Schleife ist}
+\end{block}
+\vspace{12pt}
+\pause 
+\metroset{block=transparent}
+\renewcommand{\baselinestretch}{1}
+\begin{block}{Wie funktioniert's?}
+	\vspace{2pt}
+	Die Schleife wird solange ausgeführt, solange die \emph{Bedingung} \py{True} ergibt. Nach jedem Durchgang wird der Ausdruck der \emph{Bedingung} neu ausgewertet. 
+	Ist die Bedingung \py{False} wird der Code unterhalb des Schleifenblocks ausgeführt. 
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\begin{alertblock}{Achtung Endlosschleife}
+	\vspace{2pt}
+	Man sollte immer darauf achten, dass die Bedingung in der \pybw{while}-Schleife auch wirklich irgendwannmal \py{False} wird. Ansonsten bleibt das Programm in einer \emph{Endlosschleife} gefangen. 
+\end{alertblock}
+\end{frame}
+
+\begin{fragile}[Übung]
+
+\begin{block}{Ersetze eine \pybw{for}-Schleife durch eine \pybw{while}-Schleife}
+\vspace{2pt}
+Schreibe ein Skript, das alle Zahlen von 1 bis 100 auf der Konsole ausgibt. Verwende eine While-Schleife.
+\vspace{12pt}
+\begin{solutionblock}{Lösung}
+\begin{minted}{python}
+k = 1
+while k <= 100:
+  print(k)
+  k += 1
+\end{minted}
+\end{solutionblock}
+\end{block}
+\end{fragile}
+
+
+\begin{fragile}[Übung]
+\begin{block}{Quizfrage}
+\vspace{2pt}
+Schreibe ein Programm, dass solange nach einer Hauptstadt Deiner Wahl fragt, bis die richtige Antwort eingegeben wird. 
+\end{block}
+
+\pause 
+\vspace{12pt}
+
+\begin{exampleblock}{Beispiel}
+\vspace{2pt}
+
+
+\console{Was ist die Hauptstadt von Frankreich?}
+
+Darauf hin soll entsprechend der Antwort folgendes Feedback auf der Konsole erscheinen: 
+
+\console{Das war richtig!} 
+
+bzw. 
+
+\console{Das war falsch! Versuch's gleich nochmal}
+\end{exampleblock}
+	
+\end{fragile}
+
+
+\begin{frame}<beamer:0>[fragile]
+\frametitle{Lösung}
+\begin{solutionblock}{Quizfrage}
+\begin{minted}{python}
+answer = input("Was ist die Hauptstadt von Frankreich?")
+while answer != "Paris": 
+  print("Das war leider falsch, versuch es gleich nochmal")
+  answer = input("")
+print("Das war richtig!")
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+\begin{frame}{Übung}
+
+\begin{block}{Ratespiel}
+\vspace{2pt}
+Definiere eine positive ganze Zahl \py{number_to_guess}. Der User kann nun wiederholt eine Zahl eingeben. Das Spiel endet, wenn die eingegebene Zahl mit \py{number_to_guess} übereinstimmt. 
+Andernfalls wird auf der Konsole beispielsweise ausgegeben: 
+
+\console{Sorry, Deine eingegebene Zahl war zu klein, versuche es nochmal: }
+
+\pause
+\textbf{Zusatz 1:} \\
+Am Ende soll die Anzahl der Versuche angegeben werden.
+
+
+\pause
+\textbf{Zusatz 2:} \\
+Google, wie Python die Zahl \py{number_to_guess} zufällig erzeugen kann (das verbessert das Gameplay).  
+
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}<beamer:0>[fragile]
+\frametitle{Lösung}
+\begin{solutionblock}{Ratespiel ohne Zusätze}
+\begin{minted}{python}
+number_to_guess = 512
+guess = input("Rate meine Zahl: ")
+guess = int(guess)
+
+while guess != number_to_guess:
+  if guess < number_to_guess:
+    print("Deine Zahl war zu klein")
+  else:
+    print("Deine Zahl war zu groß")
+  guess = input("Versuch's nochmal: ")
+  guess = int(guess)
+
+print("Du hast gewonnen")
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+\begin{frame}<beamer:0>[fragile]
+\frametitle{Lösung}
+\begin{solutionblock}{Ratespiel mit Zusatz 1}
+\begin{minted}{python}
+number_to_guess = 512
+guess = input("Rate meine Zahl: ")
+guess = int(guess)
+counter = 1
+
+while guess != number_to_guess:
+  if guess < number_to_guess:
+    print("Deine Zahl war zu klein")
+  else:
+    print("Deine Zahl war zu groß")
+  guess = input("Versuch's nochmal: ")
+  guess = int(guess)
+  counter = counter + 1
+  
+print(f"Du hast nach {counter} Versuchen gewonnen")	
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}<beamer:0>[fragile]
+\frametitle{Lösung}
+\begin{solutionblock}{Ratespiel mit Zusatz 2}
+\begin{minted}{python}
+import random 
+
+number_to_guess = random.randint(1, 1000)
+guess = input("Rate meine Zahl: ")
+guess = int(guess)
+# ... usw. 
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+\section{Den Schleifenfluss kontrollieren  \\ \footnotesize \texttt{break}, \texttt{continue} und \texttt{else}}
 
 
 \begin{fragile}
@@ -24,6 +231,7 @@ for k in range(1,100):
   print(k)
   if k > 3:
     break
+print("fertig")
 \end{minted}
 \onslide<3|handout:1>
 \begin{minted}{python}
@@ -31,7 +239,9 @@ for k in range(1,100):
   print(k)
   if k > 3:
     break
-# prints 1 2 3 4 
+print("fertig")
+# 1 2 3 4 
+# fertig
 \end{minted}
 \end{overprint}
 
@@ -72,7 +282,7 @@ for k in range(1,11):
   if k % 2 == 0:
     continue
   print(k)
-# prints 1 3 5 7 9 
+# 1 3 5 7 9 
 \end{minted}
 \end{overprint}
 \end{exampleblock}
@@ -96,14 +306,14 @@ Analog zum \py{if}-Statement, kann auch eine Schleife einen \py{else}-Block habe
 
 \begin{exampleblock}{Beispiel}
 \begin{minted}{python}
-name = input("Your name: ")
+name = input("Dein Name: ")
 
 for letter in name: 
-  if letter == "a":
-    print("Your name contains an a")
+  if letter == "a" or letter == "A":
+    print("Dein Name enthält ein A")
     break
 else: 
-  print("Your name contains no a")
+  print("Dein Name enthält kein A")
 \end{minted}
 \end{exampleblock}
 	
@@ -119,12 +329,11 @@ else:
 Lies eine Zahl \pybw{x} ein und gib auf der Konsole die Zahlen von \pybw{x} bis zur nächsten 10er-Zahl aus. 
 \\
 Ist die Eingabe \pybw{x = 17}, so soll die Ausgabe wie folgt aussehen: 
-\begin{verbatim}
-17
-18
-19
-20
-\end{verbatim}
+
+\console{17}\\
+\console{18}\\
+\console{19}\\
+\console{20}
 \end{block}
 	
 \vspace{12pt}
@@ -132,7 +341,7 @@ Ist die Eingabe \pybw{x = 17}, so soll die Ausgabe wie folgt aussehen:
 
 \begin{block}{Zählen mit Lücken}
 	\vspace{2pt}
-	Schreibe ein Skript, dass die Zahlen von 1 bis 99 aufzählt, dabei allerdings die 10er-Zahlen weglässt. Versuche dabei, ein \pybw{continue}-Statement zu verwenden.
+	Schreibe ein Skript, dass die Zahlen von 1 bis 99 aufzählt, dabei allerdings die 10er-Zahlen weglässt. Verwende dabei ein \pybw{continue}-Statement.
 \end{block}
 \end{fragile}
 
@@ -163,6 +372,29 @@ for k in range(1, 100):
 
 \end{frame}
 
+\begin{fragile}[Übung]
+\begin{block}{Quizfrage mit Ausstiegsmöglichkeit}
+\vspace{2pt}
+Schreibe ein Programm, dass solange nach einer Hauptstadt Deiner Wahl fragt, bis die richtige Antwort eingegeben wird. Wird allerdings der Buchstabe \pybw{q} eingegeben, so bricht das Programm ab. 
+
+\vspace{12pt}
+
+\begin{solutionblock}{Quizfrage mit Ausstiegsmöglichkeit}
+\begin{minted}{python}
+answer = input("Was ist die Hauptstadt von Frankreich?")
+while answer != "Paris": 
+  print("Das war leider falsch, versuch es gleich nochmal")
+  answer = input("")
+  if answer == "q": 
+    break
+else: 
+  print("Das war richtig!")
+\end{minted}
+\end{solutionblock}
+\end{block}
+\end{fragile}
+
+
 
 
 \begin{fragile}[Harte Übung]
@@ -170,7 +402,7 @@ for k in range(1, 100):
 \vspace{2pt}
 Lies eine ganze Zahl \py{x} ein und überprüfe, ob diese Zahl eine Primzahl ist. Die Ausgabe des Programms soll etwa wie folgt aussehen:  
 
-\texttt{Die Zahl 28061983 ist eine Primzahl.}
+\console{Die Zahl 28061983 ist eine Primzahl.}
 \end{block}
 
 \vspace{12pt}
@@ -192,24 +424,14 @@ else:
 
 
 
-
-
-%\begin{frame}{Harte Übung}
-%\begin{block}{Finde die nächste Primzahl}
-%\vspace{2pt}
-%Lies eine ganze Zahl \py{x} ein und finde die nächste Zahl größer \py{x}, die gleichzeitig eine Primzahl ist. 
-%\end{block}
-%\end{frame}
-
-
 \section{Listen \\ \footnotesize Viele Variablen gleichzeitig speichern}
 
 
 \begin{frame}
 \begin{block}{Problemstellung}
 \vspace{2pt}
-Lies mit Hilfe einer Schleife nach und nach Schulnoten von Dir ein. 
-Alle Noten sollen gespeichert werden. Danach sollst Du die Wahl haben, die soundsovielte Note anzeigen lassen zu können.   
+Lies mit Hilfe einer Schleife nach und nach Ländernamen ein. 
+Alle Länder sollen dabei gespeichert werden. Danach sollst Du die Möglichkeit haben, das soundsovielte Land anzeigen lassen zu können.   
 
 \vspace{8pt}
 
@@ -221,13 +443,13 @@ Wie macht man das?
 \begin{block}{Lösung \footnotesize(fast)}
 \begin{minted}{python}
 # ...
-# Um das Eingeben der Noten kümmern wir uns noch
-grades = [12, 10, 7, 14, 13, 13, 6, 4, 15, 14] # Noten in Notenpunkten
+# Um das Eingaben der Länder kümmern wir uns noch 
+countries = ["Deutschland", "Frankreich", "Italien", "Spanien"] 
 
-index = input("Die wievielte Note möchtest Du nochmal anschauen?")
+index = input("Das wievielte Land möchtest Du nocheinmal anschauen?")
 index = int(index)
 
-print(f"Deine { index }. Note ist { grades[index] } Punkte")
+print(f"Das { index }. Land ist { countries[index] }")
 \end{minted}
 \end{block}
 \end{fragile}
@@ -293,7 +515,7 @@ Beispiel: \py{my_list[1]} liefert das \textbf{2. Element} der Liste.
 \begin{block}{Schreibzugriff auf Listenelemente}
 \vspace{2pt}
 Nach dem gleichen Prinzip lassen sich einzelne Listeneinträge verändern. \\
-Beispiel: \py{my_list[3] = -23}. 
+Beispiel: \py{my_list[3] = "Albanien"}. 
 \end{block}
 
 \pause 
@@ -309,21 +531,14 @@ Man kann nur schon existierende Listeneinträge verändern.
 \pause 
 \vspace{12pt}
 
-
-
-\begin{exampleblock}{Neues Konzept}
-\vspace{2pt}
-Listen sind der erste Datentyp, den wir kennenlernen, der \emph{mutable} (veränderbar) ist. Die bisherigen Datentypen waren \emph{immutable}, d.h. man konnte sie zwar überschreiben, aber nicht verändern. 
-\end{exampleblock}
-
 \end{frame}
 
+
 \begin{frame}
-	
 \begin{block}{Listeneinträge hinzufügen}
 	\vspace{2pt}
 	Mit der \emph{Methode} \pybw{.append()} kann ein Eintrag zur Liste hinzugefügt werden. \\ 
-	Bsp: \py{my_list.append(12)} fügt einen weiteren Eintrag mit Wert \pybw{12} hinzu. 
+	Bsp: \py{my_list.append("Russland")} fügt den String \py{"Russland"} zu der Liste hinzu. 
 \end{block}	
 
 \pause 
@@ -339,23 +554,23 @@ Beispiel: \py{del my_list[2]} löscht das dritte Element.
 \pause 
 
 Mit der Methode \pybw{.remove()} kann man Einträge mit einem bestimmten Wert löschen. \\
-Beispiel: \py{my_list.remove(-23)} entfernt den ersten Eintrag mit dem Wert \pybw{-23}. Ist der Wert nicht vorhanden gibt es eine Fehlermeldung. 
+Beispiel: \py{my_list.remove("Italien")} entfernt den ersten Eintrag mit dem Wert \py{"Italien"}. Ist der Wert nicht vorhanden gibt es eine Fehlermeldung. 
 \end{block}
 \end{frame}
 
 \begin{fragile}[Übung]
 \begin{block}{Eine Liste erstellen}
 \vspace{2pt}
-Schreibe ein kleines Programm, dass Dich ca. 4x nach dem Namen einer Freund*in fragt und Dir am Schluss die Liste der eingegebenen Freund*innen ausgibt. 	
+Schreibe ein kleines Programm, dass Dich ca. 4x nach einem Land fragt, das Du besucht hast und Dir am Ende die Liste der besuchten Länder ausgibt. 	
 \end{block}
 \vspace{12pt}
 \begin{solutionblock}{Lösung}
 \begin{minted}{python}
-friends = []
+countries = []
 for k in range(1, 5):
-  friend = input("Wie heißt ein*e Freund*in von Dir? ")
-  friends.append(friend)
- print(friends)
+  country = input("Wo warst Du schonmal im Urlaub? ")
+  countries.append(country)
+print(countries)
 \end{minted}
 \end{solutionblock}
 \end{fragile}
@@ -367,26 +582,63 @@ for k in range(1, 5):
 \begin{fragile}[Übung]
 \begin{block}{Das Eingangsproblem}
 \vspace{2pt}
-Schreibe ein kleines Programm, dass solange Deine Noten einliest, bis Du \textbf{q} drückst. Danach sollst Du die Möglichkeit haben, eine Zahl \pybw{k} einzugeben, so dass Dir die \pybw{k}-te Note angezeigt wird. 
+Schreibe ein kleines Programm, dass solange Namen von Ländern einliest, bis Du \textbf{q} drückst. Danach sollst Du die Möglichkeit haben, eine Zahl \pybw{k} einzugeben, so dass das  \pybw{k}-te Land angezeigt wird. 
 \end{block}	
 \end{fragile}
 
 \begin{frame}<beamer:0>[fragile]{Lösung}
 \begin{solutionblock}{Das Eingangsproblem}
 \begin{minted}{python}
-grades = []
+countries = []
 while True:
-  grade = input("Gib eine Note an: ")
-  if grade == "q":
+  country = input("Gib ein Land ein: ")
+  if country == "q":
     break
-  grades.append(int(grade))
+  countries.append(country)
 
-index = input("Die wievielte Note möchtest Du nochmal anschauen?")
+index = input("Das wievielte Land möchtest Du nochmal anschauen?")
 index = int(index)
-print(f"Deine { index }. Note ist { grades[index-1] } Punkte")
+print(f"Das { index }. Land ist { countries[index-1] }.")
 \end{minted}
 \end{solutionblock}
 \end{frame}
+
+\begin{frame}
+\begin{block}{Mutability}
+
+\vspace{2pt}
+Listen sind der erste Datentyp, den wir kennenlernen, der \emph{mutable} (veränderbar) ist. Die bisherigen Datentypen waren \emph{immutable}, d.h. man konnte sie zwar überschreiben, aber nicht verändern. 
+\end{block}
+
+\pause 
+\vspace{12pt}
+
+\metroset{block=fill}
+\begin{block}{Call by Reference vs. Call by Value}
+\vspace{2pt}
+Enthält die Variable \py{my_list} eine Liste, so speichert Python eigentlich gar nicht die Liste in dieser Variable, sondern nur die Speicheradresse der Liste. 
+Dieses vorgehen nennt man auch \emph{Call by Reference}. Bei den Datentypen \py{int} und \py{str} wird stattdessen tatsächlich der Wert der Variable abgespeichert. Dies nennt man \emph{Call by Value}.
+
+\end{block}
+\end{frame}
+
+\begin{fragile}[Übung]
+\begin{block}{Eine Liste kopieren}
+\vspace{2pt}
+Definiere die Variable \py{my_list} als die Liste \py{[1,2,3]}. Kopiere die Variable \py{my_list} in die Variable \py{my_list_copy}. Füge einen weiteren Eintrag zu \py{my_list} hinzu. Welchen Wert hat \py{my_list_copy}? 
+\end{block}
+\vspace{12pt}
+\begin{solutionblock}{Lösung}
+\begin{minted}{python}
+my_list = [1, 2, 3]
+my_list_copy = my_list
+my_list.append(4)
+print(my_list_copy) # 1 2 3 4 
+\end{minted}
+\end{solutionblock}
+\end{fragile}
+
+
 
 \begin{fragile}
 \begin{block}{Schleife über Liste}
@@ -401,23 +653,22 @@ Analog wie über Strings und Ranges kann man Schleifen auch über eine Liste lau
 \begin{overprint}
 \onslide<2|handout:0>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Bulgarien", "Türkei", "Griechenland", "Libanon"]
 
-for hobby in my_hobbies:
-  print(hobby)
+for country in countries:
+  print(country)
 \end{minted}
 \onslide<3|handout:1>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Bulgarien", "Griechenland", "Türkei", "Libanon"]
 
-for hobby in my_hobbies:
-  print(hobby)
+for country in countries:
+  print(country)
   
-# prints:
-# Segeln
-# Tennis
-# Schwimmen
-# Lesen
+# Bulgarien
+# Griechenland
+# Türkei
+# Libanon
 \end{minted}
 \end{overprint}
 \end{exampleblock}
@@ -437,23 +688,22 @@ Möchte man in einer Schleife nicht nur die Listeneinträge, sondern auch die In
 \begin{overprint}
 \onslide<2|handout:0>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Guatemala", "Nicaragua", "Honduras", "Belize"]
 
-for index, hobby in enumerate(my_hobbies):
-  print(f"Mein {index + 1}.Hobby ist {hobby}")
+for (index, country) in enumerate(countries):
+  print(f"Das {index + 1}. Land ist {country}")
 \end{minted}
 \onslide<3|handout:1>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Guatemala", "Nicaragua", "Honduras", "Belize"]
 
-for index, hobby in enumerate(my_hobbies):
-  print(f"Mein {index + 1}.Hobby ist {hobby}")
-  
-# prints:
-# Mein 1. Hobby ist Segeln
-# Mein 2. Hobby ist Tennis
-# Mein 3. Hobby ist Schwimmen
-# Mein 4. Hobby ist Lesen
+for (index, country) in enumerate(countries):
+  print(f"Das {index + 1}. Land ist {country}")
+
+# Das 1. Land ist Guatemala
+# Das 2. Land ist Nicaragua
+# Das 3. Land ist Honduras
+# Das 4. Land ist Belize
 \end{minted}
 \end{overprint}
 \end{exampleblock}
@@ -464,16 +714,16 @@ for index, hobby in enumerate(my_hobbies):
 
 \begin{block}{Liste durchsuchen}
 	\vspace{2pt}
-Lies wieder eine Liste Deiner Noten ein. Prüfe, ob Du mindestens einmal unterpunktet hast (d.h. 0 Punkte hattest). 
-Auf der Konsole soll dann entweder 
+Prüfe, ob in einer Liste von Ländern das Land \py{"Italien"} vorkommt. Gib dazu auf der Konsole entweder 
 
-\pybw{Du hast irgendwo unterpunktet} 
+\console{Italien ist in der Liste}
 
 oder 
 
-\pybw{Du hast nirgendwo unterpunktet} 
+\console{Italien ist nicht in der Liste}
 
-ausgegeben werden. 
+aus.  
+
 \end{block}
 \end{frame}
 
@@ -481,19 +731,15 @@ ausgegeben werden.
 \begin{frame}<beamer:0>[fragile]{Lösung}
 \begin{solutionblock}{Liste durchsuchen}
 \begin{minted}{python}
-grades = []
-while True:
-  grade = input("Gib eine Note an: ")
-  if grade == "q":
-    break
-  grades.append(int(grade))
+# Wähle ein Beispiel für countries
+countries = ["Finnland", "Norwegen", "Schweden", "Dänemark"]
 
-for grade in grades:
-  if grade == 0:
-    print("Du hast irgendwo unterpunktet.")
+for country in countries:
+  if country == "Italien":
+    print("Italien ist in der Liste")
     break
 else: 
-  print("Du hast nirgendwo unterpunktet.")
+  print("Italien ist nicht in der Liste")
 \end{minted}
 \end{solutionblock}
 \end{frame}
@@ -513,23 +759,23 @@ Möchte man prüfen, ob ein Element in einer Liste enthalten ist, so kann man au
 \begin{overprint}
 \onslide<2|handout:0>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Finnland", "Norwegen", "Schweden", "Dänemark"]
 
-sailing_in_list = "Segeln" in my_hobbies
-climbing_in_list = "Klettern" in my_hobbies
+var_1 = "Finnland" in countries
+var_2 = "Deutschland" in countries
 
-print(sailing_in_list)  
-print(climbing_in_list)
+print(var_1)  
+print(var_2)
 \end{minted}
 \onslide<3|handout:1>
 \begin{minted}{python}
-my_hobbies = ["Segeln", "Tennis", "Schwimmen", "Lesen"]
+countries = ["Finnland", "Norwegen", "Schweden", "Dänemark"]
 
-sailing_in_list = "Segeln" in my_hobbies
-climbing_in_list = "Klettern" in my_hobbies
+var_1 = "Finnland" in countries
+var_2 = "Deutschland" in countries
 
-print(sailing_in_list)   #  True
-print(climbing_in_list)  #  False
+print(var_1)  # True
+print(var_2)  # False
 \end{minted}
 \end{overprint}
 
@@ -627,15 +873,15 @@ print(sorted_list) # [18, 12, 7, 5]
 	
 \begin{block}{Beste/Schlechteste Note}
 \vspace{2pt}
-Lies wieder ein paar Noten ein. Gib dann auf der Konsole einmal die beste und einmal die schlechteste Note aus. 
+Sei \py{grades} eine Liste der Noten deiner letzten Klausuren (z.B. \py{grades = [12, 9, 14, 11]}). 
+Gib dann auf der Konsole einmal die beste und einmal die schlechteste Note aus. 
 \end{block}	
 
 \vspace{12pt}
 
 \begin{solutionblock}{Lösung}
 \begin{minted}{python}
-#  ...
-#  einlesen wie immer
+grades = [12, 9, 14, 11]
 grades.sort()
 min_grade = grades[0]
 max_grade = grades[-1]
@@ -675,21 +921,19 @@ my_list.pop() # 1 (Gibt den letzten Eintrag der Liste zurück und entfernt ihn a
 
 \begin{block}{Durchschnittsnote}
 \vspace{2pt}
-Lies wieder ein paar Noten ein. Gib auf der Konsole die Durchschnittsnote aus. 
+Sei \py{grades} wieder eine Liste mit deinen letzten Noten.  Gib auf der Konsole die Durchschnittsnote aus. 
 \end{block}	
 
 \vspace{12pt}
 
 \begin{solutionblock}{Lösung}
-	\begin{minted}{python}
-	#  ...
-	#  einlesen wie immer
-	
-	total_sum = sum(grades)
-	count = len(grades)
-	average = total_sum/count
-	print(f"Die Durchschnittsnote ist {average}")
-	\end{minted}
+\begin{minted}{python}
+grades = [12, 9, 14, 11]
+total_sum = sum(grades)
+count = len(grades)
+average = total_sum/count
+print(f"Die Durchschnittsnote ist {average}")
+\end{minted}
 \end{solutionblock}
 	
 \end{fragile}
@@ -923,10 +1167,6 @@ my_list[::-1]    # [10, 8, 6, 4, 2]
 \end{overprint}
 \end{exampleblock}
 \end{fragile}
-
-
-
-
 
 
 
