@@ -26,21 +26,19 @@
 \usepackage{rotating} % Rotation tools
 \usepackage{censor} % Facilities for controlling restricted text
 \usepackage{listings, style/lstlisting} % Environment for non-formatted code, !uses style file!
-\usepackage{pseudocode} % Environment for specifying algorithms in a natural way
+%\usepackage{pseudocode} % Environment for specifying algorithms in a natural way
 \usepackage{style/avm} % Environment for f-structures, !uses style file!
 \usepackage{booktabs} % Enhances quality of tables
 \usepackage{tikz-qtree} % Easy tree drawing tool
 \usepackage{ifthen}
 \usepackage{lastpage}
 \usepackage{titlesec}
-\usepackage{minted}
-\usemintedstyle{friendly}
 \tikzset{every tree node/.style={align=center,anchor=north},
          level distance=2cm} % Configuration for q-trees
 \usepackage{style/btree} % Configuration for b-trees and b+-trees, !uses style file!
-\usepackage[backend=biber,style=numeric,
-            sorting=nyt]{biblatex} % Complete reimplementation of bibliographic facilities
-\addbibresource{ecl.bib}
+%\usepackage[backend=biber,style=numeric,
+%            sorting=nyt]{biblatex} % Complete reimplementation of bibliographic facilities
+%\addbibresource{ecl.bib}
 \usepackage{csquotes} % Context sensitive quotation facilities
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
@@ -51,7 +49,7 @@
 \newcommand{\note}[1]{\marginpar{\scriptsize \textcolor{red}{#1}}} % Enables comments in red on margin
 
 \titleformat{\section}
-{\normalfont\Large\bfseries}{Aufgabe~\thesection}{1em}{\normalsize}
+{\normalfont\Large\bfseries}{Lösung zu Aufgabe~\thesection}{1em}{\normalsize}
 \titlespacing*{\section}{0em}{6ex}{2ex}
 
 
@@ -61,6 +59,6 @@
 \newcommand*{\sheetdate}[1]{\def\thesheetdate{#1}}
 \newcommand*{\sheetsubmission}[1]{\def\thesheetsubmission{#1}}
 \newcommand*{\sheetnumber}[1]{\def\thesheetnumber{#1}}
-\newcommand{\py}[1]{\mintinline{python}{#1}}
+
 
 %----------------------------------------------------------------------------------------

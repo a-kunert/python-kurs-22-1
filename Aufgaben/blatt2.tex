@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article} 
+\input{head}
+
+\sheetsubmission{Abgabe bis Di. 23.11.2021 wahlweise per E-Mail oder per Replit-Einladung}
+\sheetnumber{2}
+\sheetdate{11.11.2021}
+
+
+
+\begin{document}
+
+%-------------------------------
+%	TITLE SECTION
+%-------------------------------
+
+\input{header}
+
+%-------------------------------
+%	CONTENTS
+%-------------------------------
+
+\section{Einfaches Prognosemodell}
+Am 8.11.2021 betrug die 7-Tages-Inzidenz 219 Fälle pro Woche und 100.000 Einwohner. In den 14 Tagen zuvor ist dieser Wert täglich im Schnitt um 4,58\% im Vergleich zum Vortag gewachsen. Unter der Voraussetzung, dass diese Wachstumsrate unverändert bleibt, soll berechnet werden, in wie vielen Tagen ab dem 8.11.2021 die 7-Tages-Inzidenz erstmals den Wert von 
+\begin{enumerate}
+\item 300
+\item 500
+\item 1000
+\item 10000
+\item 100000
+\end{enumerate} 
+Fälle pro Woche und 100.000 Einwohner überschreitet. Worin liegen die (offensichtlichen) Grenzen dieses Modells?  
+
+\section{Durchschnitt berechnen}
+Sei eine Liste von Zahlen gegeben. Berechne den gewichteten Durchschnitt, bei dem jede zweite Zahl in der Liste doppelt gewichtet werden soll.
+
+
+\section{Liste auf Vorgänger/Nachfolger durchsuchen}
+Sei ein Liste von Namen (z.B. \py{["Max", "Lara", "Tom"]}) sowie ein Name von einer deiner Freundinnen gegeben. Schreibe ein Programm, das prüft, ob die Namen von dir und deiner Freundin direkt hintereinander in der Liste vorkommen. 
+
+
+\section{Das Collatz-Problem}
+Sei $n$ eine beliebige, positive ganze Zahl. Folgende Vorschrift wird auf $n$ angewendet: Ist $n$ gerade, so ersetze man $n$ durch $\frac{n}{2}$, ist $n$ ungerade, so durch $3n + 1$. Setzt man diesen Prozess immer weiter fort, so erhält man eine Folge von positiven ganzen Zahlen. Sobald man bei der Zahl $1$ ankommt, wird dieser Prozess abgebrochen und die Folge gilt als beendet. Die sogenannte \emph{Collatz-Vermutung} besagt, dass diese Folge für jedes $n$ am Ende bei der Zahl $1$ ankommt. 
+
+\vspace{2pt}
+
+Zeige, dass die Vermutung für den speziellen Fall $n = 1.000.000.000$ korrekt ist. Wie lange ist diese Folge in diesem Fall, bis sie bei $1$ endet?
+
+
+\vspace{2pt}
+
+{\footnotesize\textbf{Beispiel:}
+ Startet man bei $n = 20$ erhält man die Folge: $20, 10, 5, 16, 8, 4, 2, 1$. Die Folge hat hier die Länge $8$.}  
+
+\vspace{2pt}
+
+{\footnotesize\textbf{Bemerkung:}
+Die Collatz-Vermutung ist bis heute ungelöst und inzwischen sind über 1.000.000 Euro Preisgeld für eine Lösung ausgehoben.}  
+ 
+
+
+  
+
+
+
+
+
+
+
+
+\end{document}
