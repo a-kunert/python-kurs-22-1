@@ -1,11 +1,17 @@
-counter = 1
-n = 1000000
+example_list = [2, 7, 5, -1, 4, 12, 3, -19, 16]
 
-while n != 1:
-    counter += 1
-    if n % 2 == 0:
-        n = n//2
+# We add all items up, every second item is multiplied by 2 (i.e. weighting)
+weighted_sum = 0
+length_of_list = len(example_list)
+
+for (index, number) in enumerate(example_list):
+    if index % 2 == 0:
+        # Remember: The first item in the list has index 0
+        weighted_sum += number
     else:
-        n = 3*n + 1
+        weighted_sum += 2*number
 
-print(f"Die Folge ist nach {counter} Folgengliedern zu Ende")
+result = weighted_sum / length_of_list
+print(f"Der gewichtete Durchschnitt ist {result}")
+
+

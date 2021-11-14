@@ -6,6 +6,10 @@ above_500 = False
 above_1000 = False
 above_10000 = False
 
+# The loop simulates the incidence for every day
+# Once it hits one of the given thresholds a message is printed
+# To stop printing after the threshold is reached the flags above_xxx are used
+
 while incidence <= 100000:
     day += 1
     incidence = int(incidence*1.0458)
