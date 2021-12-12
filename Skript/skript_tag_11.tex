@@ -1,0 +1,543 @@
+\section{Web APIs\\ \footnotesize Wie Python im Netz surfen kann}
+
+
+\begin{frame}
+
+\metroset{block=fill}
+\begin{block}{Definition: API}
+\vspace{2pt}
+Eine \emph{API} (Application Programming Interface) ist im Allgemeinen eine klar definierte Schnittstelle zwischen Programmen. \\ \\
+Im Kontext des Internets geht es dabei meist um Webanwendungen, die statt einer für menschen lesbaren Seite, ein maschinenlesbares JSON ausliefern. Auf diese Weise ist ein Datenaustausch zwischen Deinem Programm und einer Webanwendung in beide Richtungen möglich. \\ \\
+Eine Web-Api besteht meist aus einer (oder mehreren) Webadressen und einer Anleitung, wie sie zu benutzen ist. 
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+
+\begin{exampleblock}{Beispiele für APIs}
+\vspace{2pt}
+\pause 
+\begin{itemize}[<+->]
+\item \textbf{Instagram Api}:  Erhalte Infos, wer Dir folgt und welche Reaktionen Du auf Deine Bilder erhältst.
+\item \textbf{GoogleMaps Api}:  Sende Koordinaten an Google-Maps und erhalte die Adresse.
+\item \textbf{REST Countries}: Erhalte Daten von Ländern dieser Erde.
+\item \textbf{Stock Market Apis}: Erhalte live Daten zu Börsenkursen.
+\end{itemize}
+\end{exampleblock}
+
+\vspace{12pt}
+\pause 
+
+\begin{exampleblock}{Anwendungsbeispiele}
+\pause 
+\begin{itemize}[<+->]
+\item \textbf{Instagram}: Schreibe Dir einen Python-Scheduler, wann welche Bilder von Dir veröffentlicht werden sollen. 
+\item \textbf{REST Countries}: Nutze die Daten, um ein Quiz zu schreiben.
+\item \textbf{Stock Market Apis}: Trading Apps, SMS-Warnung bei einbrechenden Preisen. 
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Wie macht man einen API-Call?}
+\vspace{2pt}
+Im Folgenden gehen wir durch die Schritte, die man ausführen muss, um einen lesenden API-Call auszuführen. Wir verwenden dafür die \textbf{REST Countries Api}. Die Dokumentation (\emph{Docs}) der Api findet sich unter \texttt{https://restcountries.com/}.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\begin{block}{Schritt 1: Finde die richtige URL (d.h. Webadresse)}
+\vspace{2pt}
+Zunächst benötigt man eine URL (den sogennante \emph{Endpoint}). Diese kann völlig statisch sein, oftmals aber sind Teile der URL dynamisch bzw. hängen von Deiner genauen Anfrage ab. 
+
+Beispiel:
+
+\texttt{https://restcountries.com/v3.1/all} 
+
+oder 
+
+\texttt{https://restcountries.com/v3.1/name/france}
+\end{block}
+\end{frame}
+
+
+\begin{fragile}
+\begin{block}{Schritt 2: Schicke einen Request an den Endpoint}
+\vspace{2pt}
+Verwende folgenden Code, um einen Request zu schicken: 
+
+\begin{minted}{python}
+import requests
+...
+
+response = requests.get("https://restcountries.com/v3.1/name/france")
+data = response.json()
+# print(data)
+\end{minted}
+\end{block}
+\end{fragile}
+
+
+
+
+\begin{fragile}
+\begin{block}{Schritt 3: Erweitere den Request ggf. um \emph{Query-Parameter}}
+\vspace{2pt}
+
+\begin{minted}{python}
+import requests
+...
+
+payload = {"fields": ["capital","population","continents"]}
+response = requests.get("https://restcountries.com/v3.1/name/france", params=payload)
+data = response.json()
+# print(data)
+\end{minted}
+\end{block}
+\end{fragile}
+
+
+\begin{fragile}
+\begin{block}{Schritt 4: Transformiere, filtere und speichere die Daten je nach Bedarf}
+\vspace{2pt}
+
+\begin{minted}{python}
+import requests
+import json
+...
+
+payload = {"fields": ["capital","population","continents"]}
+response = requests.get("https://restcountries.com/v3.1/name/france", params=payload)
+data = response.json()
+
+with open("france.json","w") as my_file:
+  json.dump(data, my_file)
+
+\end{minted}
+\end{block}
+\end{fragile}
+
+
+\begin{frame}{Übung}
+
+\begin{block}{Daten eines Landes extrahieren}
+\vspace{2pt}
+
+Stelle einen Request zu Italien an die Countries-Api. Bereite die zurückgegebenen Daten so auf, dass folgendes auf der Konsole erscheint: 
+
+\console{Hauptstadt: Rome} \\
+\console{Bevölkerung: 59554023} \\
+\console{Kontinent: Europe} 
+\end{block}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}<beamer:0>[fragile]{Lösung}
+\begin{solutionblock}{Daten eines Landes extrahieren}
+\begin{minted}{python}
+import requests
+
+response = requests.get("https://restcountries.com/v3.1/name/italy")
+data = response.json()
+
+data = data[0]
+capital = data["capital"][0]
+population = data["population"]
+continent = data["continents"][0]
+
+print(f"Hauptstadt: {capital}")
+print(f"Bevölkerung: {population}")
+print(f"Kontinent: {continent}")
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Übung}
+
+\begin{block}{Hauptstadt-Orakel}
+\vspace{2pt}
+Schreibe eine Funktion, die den (englischsprachigen) Namen eines Landes erwartet und den Namen der Hauptstadt zurückgibt.
+\end{block}
+\end{frame}
+
+
+
+
+
+\begin{frame}<beamer:0>[fragile]{Lösung}
+\begin{solutionblock}{Hauptstadt-Orakel}
+\begin{minted}{python}
+import requests
+
+def get_capital(country): 
+    response = requests.get("https://restcountries.com/v3.1/name/" + country)
+    data = response.json()
+    data = data[0]
+    capital = data["capital"][0]
+    return capital
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{fragile}[Übung]
+\begin{block}{Datenaufbereitung}
+\vspace{2pt}
+Erstelle eine Liste aller Länder. Jedes Land soll dabei als Dictionary der folgenden Form abgespeichert werden: 
+\begin{minted}{python}
+{
+  "name": "Italy",
+  "capital": "Rome",
+  "continent": "Europe", 
+  "population": 59554023
+}
+\end{minted} 
+Speichere diese Liste als JSON in der Datei \texttt{countries.json}. 
+\end{block}
+\end{fragile}
+
+\begin{frame}<beamer:0>[fragile]{Lösung}
+\begin{solutionblock}{Datenaufbereitung}
+\begin{minted}{python}
+import requests
+import json 
+
+response = requests.get("https://restcountries.com/v3.1/all")
+data = response.json()
+
+countries = []
+for country in data: 
+    if "capital" in country.keys():
+        countries.append({
+            "name": country["name"]["common"],
+            "capital": country["capital"][0],
+            "population": country["population"],
+            "continent": country["continents"][0]
+        }) 
+
+with open("countries.json", "w") as my_file: 
+    json.dump(countries,my_file, indent=4)
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+
+\section{Projekt: Geografie-Quiz}
+
+
+\begin{frame}
+\begin{block}{Das \emph{minimal viable product} (MVP)}
+\vspace{2pt}
+Anforderungen: 
+\pause 
+\begin{itemize}[<+->]
+	\item Es werden Länder aus einem JSON gelesen.
+	\item Zu einem Land aus der Liste wird die Hauptstadt abgefragt.
+	\item Es erscheinen 4 Lösungsmöglichkeiten (Multiple Choice).
+	\item Durch Eingabe einer Zahl zwischen 1 bis 4 kann getippt werden. 
+	\item Nach Eingabe erscheint ein kurzes Feedback (Richtig/Falsch).  
+\end{itemize}
+\end{block}
+\end{frame}
+	
+\begin{fragile}
+	
+\begin{exampleblock}{Beispielausgabe}
+\vspace{8pt}
+
+\begin{overprint}
+\onslide<1|handout:1>
+
+\console{Was ist die Hauptstadt von Frankreich?}
+
+\console{(1) Bratislava}\\
+\console{(2) Berlin} \\
+\console{(3) Paris} \\
+\console{(4) Stockholm} \\ \\
+ 
+\console{Antwort:} 
+\onslide<2|handout:2>
+
+\console{Was ist die Hauptstadt von Frankreich?}
+
+\console{(1) Bratislava}\\
+\console{(2) Berlin} \\
+\console{(3) Paris} \\
+\console{(4) Stockholm} \\ \\
+ 
+\console{Antwort: 3} 
+\onslide<3|handout:3>
+
+\console{Was ist die Hauptstadt von Frankreich?}
+
+\console{(1) Bratislava}\\
+\console{(2) Berlin} \\
+\console{(3) Paris} \\
+\console{(4) Stockholm} \\ \\
+ 
+\console{Antwort: 3} \\ \\
+
+\console{Das war korrekt!}
+\end{overprint}
+\end{exampleblock}
+	
+\end{fragile}
+
+%\begin{fragile}
+%
+%\begin{block}{Stand vom letzten Mal}
+%\begin{minted}[linenos]{python}
+%import json
+%import random
+%
+%# Einlesen der Länderliste
+%with open("countries.json") as my_file:
+%  countries = json.load(my_file)
+%country = countries[0]
+%
+%# Liste von Hauptstädten
+%capitals = []
+%for current_country in countries:
+%  capitals.append(current_country["capital"])
+%
+%
+%random.shuffle(capitals)
+%answer_options = capitals[0:3]
+%answer_options.append(country["capital"])
+%random.shuffle(answer_options)
+%print("\n\n")
+%print(f"Was ist die Hauptstadt von {country['name']}?\n")
+%for index, option in enumerate(answer_options):
+%  print(f"({index + 1}) {option}")
+%\end{minted}
+%\end{block}
+	
+%\end{fragile}
+
+\begin{frame}{Übung}
+
+\begin{block}{Multiple Choice Frage}
+\vspace{2pt}
+Lies die Datei \py{"countries.json" } ein. Nimm das erste Land aus der Liste (Afghanistan) und stelle die Frage nach der Hauptstadt mit 4 Antwortmöglichkeiten wie oben auf der Konsole dar. 
+
+\small{\textbf{Tip}: Aufgabe 4 vom letzten Übungsblatt kann helfen}
+\end{block}
+\end{frame}
+
+
+\begin{frame}<beamer:0>[fragile]{Lösung}
+\begin{solutionblock}{Multiple Choice Frage}
+\begin{minted}{python}
+import random
+import json
+with open("countries.json") as file: 
+    countries = json.load(file)
+
+capitals = []
+for country in countries: 
+    capitals.append(country["capital"])
+
+capital = capitals[0]
+random.shuffle(capitals)
+answer_options = capitals[0:3]
+answer_options.append(capital)
+random.shuffle(answer_options)
+country = countries[0]
+
+print(f"Was ist die Hauptstadt von { country['name'] }?\n")
+for index,option in enumerate(answer_options): 
+    print(f"({ index + 1 }) { option }")
+
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Welche Verbesserungen sind dringend nötig?}
+	\vspace{2pt}
+\pause 
+Schritte nach Priorität: 
+\pause 
+	\begin{enumerate}[<+->]
+		\item Antwort einlesen und Feedback geben (Antwort war richtig/falsch)
+		\item Statt Afghanistan soll ein zufälliges Land abgefragt werden
+		\item Sicherstellen, dass die Antwort-Optionen stets paarweise unterschiedlich sind
+	\end{enumerate}	
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Übungen}
+	
+	\begin{block}{Antwort einlesen}
+		\vspace{2pt}
+		Frage eine Antwort ab. 	
+	\end{block}
+\vspace{12pt}
+	
+	\begin{block}{Antwort prüfen}
+		\vspace{2pt}
+		Entscheide, ob die Antwort richtig oder falsch ist, und gib das Ergebnis auf der Konsole aus. 
+	\end{block}
+\vspace{12pt}
+	
+	\begin{block}{Land zufällig auswählen}
+		\vspace{2pt}
+		Sorge dafür, dass das abgefragte Land zufällig ausgewählt wird. 
+	\end{block}
+	
+	
+\end{frame}
+
+\begin{frame}<beamer:0>[fragile]{Lösungen}
+	
+\begin{solutionblock}{Antwort einlesen}
+\begin{minted}{python}
+...
+for index, option in enumerate(answer_options):
+  print(f"({index + 1}) {option}")
+answer = input("Antwort: ")
+\end{minted}
+\end{solutionblock}
+
+\vspace{12pt}
+
+\begin{solutionblock}{Antwort prüfen}
+\begin{minted}{python}
+...
+answer = input("\nAntwort: ")
+index = int(answer) - 1
+if answer_options[index] == country["capital"]:
+  print("Das war korrekt.")
+else:
+  print("Das war leider falsch.")
+\end{minted}
+\end{solutionblock}
+
+
+\end{frame}
+
+\begin{frame}<beamer:0>[fragile]{Lösungen}
+	
+\begin{solutionblock}{Land zufällig auswählen}
+\begin{minted}{python}
+...
+with open("countries.json") as my_file:
+  countries = json.load(my_file)
+random.shuffle(countries)
+country = countries[0]
+...
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+\begin{frame}
+\begin{alertblock}{Möglicher Bug}
+\vspace{2pt}
+Um die Lösungsmöglichkeiten zu generieren, werden 3 Haupstädte zufällig ausgewählt und dann die korrekte Hauptstadt hinzugefügt. 
+Theoeretisch ist es möglich, dass die korrekte Hauptstadt schon bei den 3 zufälligen Haupstädten dabei war. 
+\end{alertblock}
+\pause
+\vspace{12pt} 
+\begin{exampleblock}{Ist nur ein kleines Problem}
+\vspace{2pt}
+Das ist nur ein kosmetisches Problem. Die Funktionalität geht davon nicht kaputt. 
+\end{exampleblock}
+\end{frame}
+
+
+\begin{fragile}
+\begin{block}{Mögliche Lösung}
+\vspace{2pt}
+Mittels \pybw{.remove()} kann man die korrekte Hauptstadt aus der Liste \pybw{capitals} entfernen. 
+\end{block}
+
+\pause 
+\vspace{12pt}
+\begin{block}{Bessere Lösung}
+\vspace{2pt}
+\begin{minted}{python}
+...
+for current_country in countries:
+  if current_country["capital"] != country["capital"]:
+    capitals.append(current_country["capital"])
+...
+\end{minted}
+\end{block}
+
+\pause 
+\vspace{12pt}
+
+
+Warum ist die zweite Lösung besser?
+
+
+\end{fragile}
+
+\begin{frame}{Übung}
+
+\begin{block}{Feature Request}
+\vspace{2pt}
+Es sollen (zunächst) nur Hauptstädte aus Europa abgefragt werden.
+\end{block}
+	
+\end{frame}
+
+
+
+\begin{frame}<beamer:0>[fragile]{Lösung}
+	
+\begin{solutionblock}{Feature Request: Nur europäische Hauptstädte}
+\begin{minted}{python}
+...
+with open("countries.json") as my_file:
+  countries = json.load(my_file)
+
+filtered_countries = []
+for country in countries: 
+  if country["continent"] == "Europa": 
+    filtered_countries.append(country)
+
+countries = filtered_countries
+
+random.shuffle(countries)
+...
+\end{minted}
+\end{solutionblock}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
