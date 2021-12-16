@@ -3,1407 +3,1407 @@
     "name": "Afghanistan",
     "capital": "Kabul",
     "population": 35500000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "AFG"
   },
   {
     "name": "Albanien",
     "capital": "Tirana",
     "population": 2900000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "ALB"
   },
   {
     "name": "Algerien",
     "capital": "Algier",
     "population": 42200000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "DZA"
   },
   {
     "name": "Andorra",
     "capital": "Andorra la Vella",
     "population": 80000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "AND"
   },
   {
     "name": "Angola",
     "capital": "Luanda",
     "population": 28600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "AGO"
   },
   {
     "name": "Antigua und Barbuda",
     "capital": "Saint John’s",
     "population": 100000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "ATG"
   },
   {
     "name": "Argentinien",
     "capital": "Buenos Aires",
     "population": 44300000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "ARG"
   },
   {
     "name": "Armenien",
     "capital": "Jerewan",
     "population": 3000000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "ARM"
   },
   {
     "name": "Aserbaidschan",
     "capital": "Baku",
     "population": 9900000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "AZE"
   },
   {
     "name": "Australien",
     "capital": "Canberra",
     "population": 24500000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "AUS"
   },
   {
     "name": "Bahamas",
     "capital": "Nassau",
     "population": 400000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "BHS"
   },
   {
     "name": "Bahrain",
     "capital": "Manama",
     "population": 1500000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "BHR"
   },
   {
     "name": "Bangladesch",
     "capital": "Dhaka",
     "population": 164700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "BGD"
   },
   {
     "name": "Barbados",
     "capital": "Bridgetown",
     "population": 300000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "BRB"
   },
   {
     "name": "Belgien",
     "capital": "Brüssel",
     "population": 11300000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "BEL"
   },
   {
     "name": "Belize",
     "capital": "Belmopan",
     "population": 400000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "BLZ"
   },
   {
     "name": "Benin",
     "capital": "Porto-Novo",
     "population": 11200000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "BEN"
   },
   {
     "name": "Bhutan",
     "capital": "Thimphu",
     "population": 800000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "BTN"
   },
   {
     "name": "Bolivien",
     "capital": "Sucre",
     "population": 11100000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "BOL"
   },
   {
     "name": "Bosnien und Herzegowina",
     "capital": "Sarajevo",
     "population": 3500000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "BIH"
   },
   {
     "name": "Botswana",
     "capital": "Gaborone",
     "population": 2300000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "BWA"
   },
   {
     "name": "Brasilien",
     "capital": "Brasília",
     "population": 207900000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "BRA"
   },
   {
     "name": "Brunei",
     "capital": "Bandar Seri Begawan",
     "population": 400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "BRN"
   },
   {
     "name": "Bulgarien",
     "capital": "Sofia",
     "population": 7100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "BGR"
   },
   {
     "name": "Burkina Faso",
     "capital": "Ouagadougou",
     "population": 19600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "BFA"
   },
   {
     "name": "Burundi",
     "capital": "Gitega",
     "population": 10400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "BDI"
   },
   {
     "name": "Chile",
     "capital": "Santiago de Chile",
     "population": 18400000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "CHL"
   },
   {
     "name": "China",
     "capital": "Peking",
     "population": 1386800000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "CHN"
   },
   {
     "name": "Costa Rica",
     "capital": "San José",
     "population": 4900000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "CRI"
   },
   {
     "name": "Demokratische Republik Kongo",
     "capital": "Kinshasa",
     "population": 81500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "COD"
   },
   {
     "name": "Deutschland",
     "capital": "Berlin",
     "population": 83100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "DEU"
   },
   {
     "name": "Dominica",
     "capital": "Roseau",
     "population": 73000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "DMA"
   },
   {
     "name": "Dominikanische Republik",
     "capital": "Santo Domingo",
     "population": 10700000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "DOM"
   },
   {
     "name": "Dschibuti",
     "capital": "Dschibuti-Stadt",
     "population": 1000000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "DJI"
   },
   {
     "name": "Dänemark",
     "capital": "Kopenhagen",
     "population": 5748769,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "DNK"
   },
   {
     "name": "Ecuador",
     "capital": "Quito",
     "population": 16800000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "ECU"
   },
   {
     "name": "El Salvador",
     "capital": "San Salvador",
     "population": 6400000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "SLV"
   },
   {
     "name": "Elfenbeinküste",
     "capital": "Yamoussoukro",
     "population": 24400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "CIV"
   },
   {
     "name": "Eritrea",
     "capital": "Asmara",
     "population": 5900000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ERI"
   },
   {
     "name": "Estland",
     "capital": "Tallinn",
     "population": 1300000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "EST"
   },
   {
     "name": "Eswatini",
     "capital": "Mbabane",
     "population": 1400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SWZ"
   },
   {
     "name": "Fidschi",
     "capital": "Suva",
     "population": 900000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "FJI"
   },
   {
     "name": "Finnland",
     "capital": "Helsinki",
     "population": 5500000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "FIN"
   },
   {
     "name": "Frankreich",
     "capital": "Paris",
     "population": 65000000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "FRA"
   },
   {
     "name": "Färöer",
     "capital": "Tórshavn",
     "population": 49000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "FO"
   },
   {
     "name": "Gabun",
     "capital": "Libreville",
     "population": 2000000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GAB"
   },
   {
     "name": "Gambia",
     "capital": "Banjul",
     "population": 2100000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GMB"
   },
   {
     "name": "Georgien",
     "capital": "Tiflis",
     "population": 3900000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "GEO"
   },
   {
     "name": "Ghana",
     "capital": "Accra",
     "population": 28800000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GHA"
   },
   {
     "name": "Grenada",
     "capital": "St. George’s",
     "population": 108000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "GRD"
   },
   {
     "name": "Griechenland",
     "capital": "Athen",
     "population": 10700000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "GRC"
   },
   {
     "name": "Grönland",
     "capital": "Nuuk",
     "population": 57500,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "GRL"
   },
   {
     "name": "Guatemala",
     "capital": "Guatemala-Stadt",
     "population": 16900000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "GTM"
   },
   {
     "name": "Guinea",
     "capital": "Conakry",
     "population": 11500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GIN"
   },
   {
     "name": "Guinea-Bissau",
     "capital": "Bissau",
     "population": 1900000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GNB"
   },
   {
     "name": "Guyana",
     "capital": "Georgetown",
     "population": 800000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "GUY"
   },
   {
     "name": "Haiti",
     "capital": "Port-au-Prince",
     "population": 10600000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "HTI"
   },
   {
     "name": "Honduras",
     "capital": "Tegucigalpa",
     "population": 8900000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "HND"
   },
   {
     "name": "Hong Kong",
     "capital": "Hong Kong",
     "population": 7300000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "HKG"
   },
   {
     "name": "Indien",
     "capital": "Neu-Delhi",
     "population": 1352600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "IND"
   },
   {
     "name": "Indonesien",
     "capital": "Jakarta",
     "population": 264000000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "IDN"
   },
   {
     "name": "Irak",
     "capital": "Bagdad",
     "population": 39200000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "IRQ"
   },
   {
     "name": "Iran",
     "capital": "Teheran",
     "population": 80600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "IRN"
   },
   {
     "name": "Irland",
     "capital": "Dublin",
     "population": 4800000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "IRL"
   },
   {
     "name": "Island",
     "capital": "Reykjavík",
     "population": 350000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "ISL"
   },
   {
     "name": "Israel",
     "capital": "Jerusalem",
     "population": 8600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "ISR"
   },
   {
     "name": "Italien",
     "capital": "Rom",
     "population": 60500000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "ITA"
   },
   {
     "name": "Jamaika",
     "capital": "Kingston",
     "population": 2900000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "JAM"
   },
   {
     "name": "Japan",
     "capital": "Tokio",
     "population": 126700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "JPN"
   },
   {
     "name": "Jemen",
     "capital": "Sanaa",
     "population": 28300000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "YEM"
   },
   {
     "name": "Jordanien",
     "capital": "Amman",
     "population": 9700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "JOR"
   },
   {
     "name": "Kambodscha",
     "capital": "Phnom Penh",
     "population": 15900000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "KHM"
   },
   {
     "name": "Kamerun",
     "capital": "Yaoundé",
     "population": 25000000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "CMR"
   },
   {
     "name": "Kanada",
     "capital": "Ottawa",
     "population": 36700000,
-    "continent": "Nordamerika",
+    "region": "Nordamerika",
     "iso": "CAN"
   },
   {
     "name": "Kap Verde",
     "capital": "Praia",
     "population": 517000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "CPV"
   },
   {
     "name": "Kasachstan",
     "capital": "Nur-Sultan",
     "population": 18000000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "KAZ"
   },
   {
     "name": "Katar",
     "capital": "Doha",
     "population": 2700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "QAT"
   },
   {
     "name": "Kenia",
     "capital": "Nairobi",
     "population": 49700000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "KEN"
   },
   {
     "name": "Kirgisistan",
     "capital": "Bischkek",
     "population": 6200000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "KGZ"
   },
   {
     "name": "Kiribati",
     "capital": "South Tarawa",
     "population": 100000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "KIR"
   },
   {
     "name": "Kolumbien",
     "capital": "Bogotá",
     "population": 49300000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "COL"
   },
   {
     "name": "Komoren",
     "capital": "Moroni",
     "population": 800000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "COM"
   },
   {
     "name": "Kosovo",
     "capital": "Pristina",
     "population": 1800000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "XXK"
   },
   {
     "name": "Kroatien",
     "capital": "Zagreb",
     "population": 4100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "HRV"
   },
   {
     "name": "Kuba",
     "capital": "Havanna",
     "population": 11300000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "CUB"
   },
   {
     "name": "Kuwait",
     "capital": "Kuwait-Stadt",
     "population": 4100000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "KWT"
   },
   {
     "name": "Laos",
     "capital": "Vientiane",
     "population": 7000000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "LAO"
   },
   {
     "name": "Lesotho",
     "capital": "Maseru",
     "population": 2200000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "LSO"
   },
   {
     "name": "Lettland",
     "capital": "Riga",
     "population": 1900000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "LVA"
   },
   {
     "name": "Libanon",
     "capital": "Beirut",
     "population": 6200000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "LBN"
   },
   {
     "name": "Liberia",
     "capital": "Monrovia",
     "population": 4700000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "LBR"
   },
   {
     "name": "Libyen",
     "capital": "Tripolis",
     "population": 6400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "LBY"
   },
   {
     "name": "Liechtenstein",
     "capital": "Vaduz",
     "population": 40000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "LIE"
   },
   {
     "name": "Litauen",
     "capital": "Vilnius",
     "population": 2800000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "LTU"
   },
   {
     "name": "Luxemburg",
     "capital": "Luxemburg",
     "population": 600000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "LUX"
   },
   {
     "name": "Macau",
     "capital": "Macau",
     "population": 700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "MAC"
   },
   {
     "name": "Madagaskar",
     "capital": "Antananarivo",
     "population": 25500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MDG"
   },
   {
     "name": "Malawi",
     "capital": "Lilongwe",
     "population": 18600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MWI"
   },
   {
     "name": "Malaysia",
     "capital": "Kuala Lumpur",
     "population": 31600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "MYS"
   },
   {
     "name": "Malediven",
     "capital": "Malé",
     "population": 400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "MDV"
   },
   {
     "name": "Mali",
     "capital": "Bamako",
     "population": 18900000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MLI"
   },
   {
     "name": "Malta",
     "capital": "Valletta",
     "population": 438000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "MLT"
   },
   {
     "name": "Marokko",
     "capital": "Rabat",
     "population": 35100000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MAR"
   },
   {
     "name": "Marshallinseln",
     "capital": "Majuro",
     "population": 60000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "MHL"
   },
   {
     "name": "Mauretanien",
     "capital": "Nouakchott",
     "population": 4400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MRT"
   },
   {
     "name": "Mauritius",
     "capital": "Port Louis",
     "population": 1300000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MUS"
   },
   {
     "name": "Mazedonien",
     "capital": "Skopje",
     "population": 2100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "MKD"
   },
   {
     "name": "Mexiko",
     "capital": "Mexiko-Stadt",
     "population": 129200000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "MEX"
   },
   {
     "name": "Mikronesien",
     "capital": "Palikir",
     "population": 107000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "FSM"
   },
   {
     "name": "Moldawien",
     "capital": "Chisinau",
     "population": 3900000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "MDA"
   },
   {
     "name": "Monaco",
     "capital": "Monaco",
     "population": 37800,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "MCO"
   },
   {
     "name": "Mongolei",
     "capital": "Ulaanbaatar",
     "population": 3200000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "MNG"
   },
   {
     "name": "Montenegro",
     "capital": "Podgorica",
     "population": 600000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "MNE"
   },
   {
     "name": "Mosambik",
     "capital": "Maputo",
     "population": 29700000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "MOZ"
   },
   {
     "name": "Myanmar",
     "capital": "Naypyidaw",
     "population": 53400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "MMR"
   },
   {
     "name": "Namibia",
     "capital": "Windhoek",
     "population": 2500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "NAM"
   },
   {
     "name": "Nauru",
     "capital": "Yaren",
     "population": 10000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "NRU"
   },
   {
     "name": "Nepal",
     "capital": "Kathmandu",
     "population": 29400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "NPL"
   },
   {
     "name": "Neuseeland",
     "capital": "Wellington",
     "population": 4800000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "NZL"
   },
   {
     "name": "Nicaragua",
     "capital": "Managua",
     "population": 6200000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "NIC"
   },
   {
     "name": "Niederlande",
     "capital": "Amsterdam",
     "population": 17100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "NLD"
   },
   {
     "name": "Niger",
     "capital": "Niamey",
     "population": 20600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "NER"
   },
   {
     "name": "Nigeria",
     "capital": "Abuja",
     "population": 190900000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "NGA"
   },
   {
     "name": "Nordkorea",
     "capital": "Pjöngjang",
     "population": 25500000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "PRK"
   },
   {
     "name": "Norwegen",
     "capital": "Oslo",
     "population": 5300000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "NOR"
   },
   {
     "name": "Oman",
     "capital": "Maskat",
     "population": 4700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "OMN"
   },
   {
     "name": "Osttimor",
     "capital": "Dili",
     "population": 1300000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "TLS"
   },
   {
     "name": "Pakistan",
     "capital": "Islamabad",
     "population": 207600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "PAK"
   },
   {
     "name": "Palau",
     "capital": "Melekeok",
     "population": 21000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "PLW"
   },
   {
     "name": "Panama",
     "capital": "Panama-Stadt",
     "population": 4100000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "PAN"
   },
   {
     "name": "Papua-Neuguinea",
     "capital": "Port Moresby",
     "population": 8300000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "PNG"
   },
   {
     "name": "Paraguay",
     "capital": "Asunción",
     "population": 6800000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "PRY"
   },
   {
     "name": "Peru",
     "capital": "Lima",
     "population": 31800000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "PER"
   },
   {
     "name": "Philippinen",
     "capital": "Manila",
     "population": 105000000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "PHL"
   },
   {
     "name": "Polen",
     "capital": "Warschau",
     "population": 38400000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "POL"
   },
   {
     "name": "Portugal",
     "capital": "Lissabon",
     "population": 10300000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "PRT"
   },
   {
     "name": "Republik Kongo",
     "capital": "Brazzaville",
     "population": 5000000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "COG"
   },
   {
     "name": "Ruanda",
     "capital": "Kigali",
     "population": 12300000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "RWA"
   },
   {
     "name": "Rumänien",
     "capital": "Bukarest",
     "population": 19600000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "ROU"
   },
   {
     "name": "Russland",
     "capital": "Moskau",
     "population": 144500000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "RUS"
   },
   {
     "name": "Saint Kitts und Nevis",
     "capital": "Basseterre",
     "population": 50000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "KNA"
   },
   {
     "name": "Saint Lucia",
     "capital": "Castries",
     "population": 200000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "LCA"
   },
   {
     "name": "Saint Vincent und die Grenadinen",
     "capital": "Kingstown",
     "population": 104000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "VCT"
   },
   {
     "name": "Salomonen",
     "capital": "Honiara",
     "population": 700000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "SLB"
   },
   {
     "name": "Sambia",
     "capital": "Lusaka",
     "population": 16400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ZMB"
   },
   {
     "name": "Samoa",
     "capital": "Apia",
     "population": 200000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "WSM"
   },
   {
     "name": "San Marino",
     "capital": "San Marino",
     "population": 32800,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "SMR"
   },
   {
     "name": "Saudi-Arabien",
     "capital": "Riad",
     "population": 32600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "SAU"
   },
   {
     "name": "Schweden",
     "capital": "Stockholm",
     "population": 10100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "SWE"
   },
   {
     "name": "Schweiz",
     "capital": "Bern",
     "population": 8500000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "CHE"
   },
   {
     "name": "Senegal",
     "capital": "Dakar",
     "population": 15800000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SEN"
   },
   {
     "name": "Serbien",
     "capital": "Belgrad",
     "population": 7000000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "SRB"
   },
   {
     "name": "Seychellen",
     "capital": "Victoria",
     "population": 90000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SYC"
   },
   {
     "name": "Sierra Leone",
     "capital": "Freetown",
     "population": 7600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SLE"
   },
   {
     "name": "Simbabwe",
     "capital": "Harare",
     "population": 16600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ZWE"
   },
   {
     "name": "Singapur",
     "capital": "Singapur",
     "population": 5700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "SGP"
   },
   {
     "name": "Slowakei",
     "capital": "Bratislava",
     "population": 5400000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "SVK"
   },
   {
     "name": "Slowenien",
     "capital": "Ljubljana",
     "population": 2100000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "SVN"
   },
   {
     "name": "Somalia",
     "capital": "Mogadischu",
     "population": 14700000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SOM"
   },
   {
     "name": "Spanien",
     "capital": "Madrid",
     "population": 46600000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "ESP"
   },
   {
     "name": "Sri Lanka",
     "capital": "Colombo",
     "population": 21400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "LKA"
   },
   {
     "name": "Sudan",
     "capital": "Khartum",
     "population": 40600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SDN"
   },
   {
     "name": "Suriname",
     "capital": "Paramaribo",
     "population": 600000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "SUR"
   },
   {
     "name": "Syrien",
     "capital": "Damaskus",
     "population": 18300000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "SYR"
   },
   {
     "name": "São Tomé und Príncipe",
     "capital": "São Tomé",
     "population": 200000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "STP"
   },
   {
     "name": "Südafrika",
     "capital": "Pretoria",
     "population": 56500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ZAF"
   },
   {
     "name": "Südkorea",
     "capital": "Seoul",
     "population": 51400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "KOR"
   },
   {
     "name": "Südsudan",
     "capital": "Juba",
     "population": 12600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "SSD"
   },
   {
     "name": "Tadschikistan",
     "capital": "Duschanbe",
     "population": 8800000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "TJK"
   },
   {
     "name": "Taiwan",
     "capital": "Taipeh",
     "population": 23600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "TWN"
   },
   {
     "name": "Tansania",
     "capital": "Dodoma",
     "population": 57500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "TZA"
   },
   {
     "name": "Thailand",
     "capital": "Bangkok",
     "population": 66100000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "THA"
   },
   {
     "name": "Togo",
     "capital": "Lomé",
     "population": 7800000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "TGO"
   },
   {
     "name": "Tonga",
     "capital": "Nuku’alofa",
     "population": 123000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "TON"
   },
   {
     "name": "Trinidad und Tobago",
     "capital": "Port of Spain",
     "population": 1400000,
-    "continent": "Mittelamerika",
+    "region": "Mittelamerika",
     "iso": "TTO"
   },
   {
     "name": "Tschad",
     "capital": "N'Djamena",
     "population": 14900000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "TCD"
   },
   {
     "name": "Tschechien",
     "capital": "Prag",
     "population": 10600000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "CZE"
   },
   {
     "name": "Tunesien",
     "capital": "Tunis",
     "population": 11500000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "TUN"
   },
   {
     "name": "Turkmenistan",
     "capital": "Aschgabad",
     "population": 5800000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "TKM"
   },
   {
     "name": "Tuvalu",
     "capital": "Funafuti",
     "population": 10000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "TUV"
   },
   {
     "name": "Türkei",
     "capital": "Ankara",
     "population": 83150000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "TUR"
   },
   {
     "name": "Uganda",
     "capital": "Kampala",
     "population": 42800000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "UGA"
   },
   {
     "name": "Ukraine",
     "capital": "Kiew",
     "population": 42300000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "UKR"
   },
   {
     "name": "Ungarn",
     "capital": "Budapest",
     "population": 9800000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "HUN"
   },
   {
     "name": "Uruguay",
     "capital": "Montevideo",
     "population": 3500000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "URY"
   },
   {
     "name": "Usbekistan",
     "capital": "Taschkent",
     "population": 32600000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "UZB"
   },
   {
     "name": "Vanuatu",
     "capital": "Port Vila",
     "population": 300000,
-    "continent": "Ozeanien",
+    "region": "Ozeanien",
     "iso": "VUT"
   },
   {
     "name": "Vatikanstadt",
     "capital": "Vatikanstadt",
     "population": 829,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "VAT"
   },
   {
     "name": "Venezuela",
     "capital": "Caracas",
     "population": 31400000,
-    "continent": "Südamerika",
+    "region": "Südamerika",
     "iso": "VEN"
   },
   {
     "name": "Vereinigte Arabische Emirate",
     "capital": "Abu Dhabi",
     "population": 9400000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "ARE"
   },
   {
     "name": "Vereinigte Staaten",
     "capital": "Washington, D.C.",
     "population": 325400000,
-    "continent": "Nordamerika",
+    "region": "Nordamerika",
     "iso": "USA"
   },
   {
     "name": "Vereinigtes Königreich",
     "capital": "London",
     "population": 66200000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "GBR"
   },
   {
     "name": "Vietnam",
     "capital": "Hanoi",
     "population": 93700000,
-    "continent": "Asien",
+    "region": "Asien",
     "iso": "VNM"
   },
   {
     "name": "Weißrussland",
     "capital": "Minsk",
     "population": 9500000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "BLR"
   },
   {
     "name": "Westsahara",
     "capital": "El Aaiún",
     "population": 600000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ESH"
   },
   {
     "name": "Zentralafrikanische Republik",
     "capital": "Bangui",
     "population": 4700000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "CAF"
   },
   {
     "name": "Zypern",
     "capital": "Nikosia",
     "population": 1200000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "CYP"
   },
   {
     "name": "Ägypten",
     "capital": "Kairo",
     "population": 93400000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "EGY"
   },
   {
     "name": "Äquatorialguinea",
     "capital": "Malabo",
     "population": 1300000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "GNQ"
   },
   {
     "name": "Äthiopien",
     "capital": "Addis Abeba",
     "population": 105000000,
-    "continent": "Afrika",
+    "region": "Afrika",
     "iso": "ETH"
   },
   {
     "name": "Österreich",
     "capital": "Wien",
     "population": 8800000,
-    "continent": "Europa",
+    "region": "Europa",
     "iso": "AUT"
   }
 ]
